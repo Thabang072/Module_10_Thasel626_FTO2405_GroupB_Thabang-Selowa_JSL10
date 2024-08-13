@@ -42,10 +42,9 @@ function findMostRecentBook(books) {
 
 function findIntersection(setA, setB) {
     // 🪲 Bug: Incorrect logic
-    const intersection = new Set([setA]);
-    new set([setB])
-
-    return intersection;
+    const intersection = new Set([...setA]
+        .filter((word) => setB.has(word)));
+         return intersection;
 }
 
 async function navigateLabyrinth(directions) {
